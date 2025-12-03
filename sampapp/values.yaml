@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image: 
-  repository: my-image-repo/sample-app
+  repository: sample-app
   # This sets the pull policy for images.
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
