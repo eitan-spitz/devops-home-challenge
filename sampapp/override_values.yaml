@@ -1,0 +1,21 @@
+image:
+  repository: my-image-repo/sample-app
+  tag: "0.1.1"
+service:
+  port: 8080
+ingress:
+  enabled: true 
+  
+livenessProbe:
+  httpGet:
+    path: "/live"
+readinessProbe:
+  httpGet:
+    path: "/ready"
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
